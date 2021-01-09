@@ -4,8 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Example</title>
-    <link rel="stylesheet" href="~/css/bootstrap.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <environment names="Development,Docker">
+        <link rel="stylesheet" href="~/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="~/css/bootstrap.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
 </head>
 <body>
     <header>
@@ -42,7 +48,12 @@
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <environment names="Development,Docker">
+        <script src="~/js/site.js"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
