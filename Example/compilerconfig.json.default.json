@@ -1,0 +1,34 @@
+{
+  "compilers": {
+    "sass": {
+      "autoPrefix": "",
+      "includePath": "",
+      "indentType": "space",
+      "indentWidth": 2,
+      "outputStyle": "nested",
+      "Precision": 5,
+      "relativeUrls": true,
+      "sourceMapRoot": "",
+      "lineFeed": "",
+      "sourceMap": false
+    },
+    "babel": {
+      "sourceMap": false
+    }
+  },
+  "autoprefix": {
+    "enabled": false
+  },
+  "minifiers": {
+    "css": {
+      "enabled": false,
+      "termSemicolons": true,
+      "gzip": false
+    },
+    "javascript": {
+      "enabled": false,
+      "termSemicolons": true,
+      "gzip": false
+    }
+  }
+}
