@@ -4,6 +4,10 @@
     "inputFile": "wwwroot/css/site.scss"
   },
   {
+    "outputFile": "wwwroot/css/bootstrap.css",
+    "inputFile": "wwwroot/css/bootstrap.scss"
+  },
+  {
     "outputFile": "wwwroot/js/site.js",
     "inputFile": "wwwroot/js/site.es6"
   }
