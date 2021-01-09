@@ -1,5 +1,12 @@
 {
   "version": 1,
   "isRoot": true,
-  "tools": {}
+  "tools": {
+    "microsoft.web.librarymanager.cli": {
+      "version": "2.1.113",
+      "commands": [
+        "libman"
+      ]
+    }
+  }
 }
